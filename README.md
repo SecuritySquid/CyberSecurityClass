@@ -64,6 +64,8 @@ The playbook implements the following tasks:
 - installs python
 - installs docker
 - downloads an elk container for docker and configures it for ports 5601,9200,5044
+- installs filebeat monitor on webservers
+- installs metricbeat monitor on webservers
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -71,7 +73,7 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- 10.0.0.4, 10.0.0.5, 10.0.0.6
+- 10.0.0.5, 10.0.0.6  10.0.0.7
 
 We have installed the following Beats on these machines:
   FileBeaet
